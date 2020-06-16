@@ -13,6 +13,7 @@
 	width: 30px;
 	height: 30px;
 	font-weight: bolder;
+	transition: top .3s linear;
 }
 
 .start{
@@ -24,14 +25,16 @@
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
+	transition: all .3s linear;
+	cursor: pointer;
 }
 
-.start .start-white{
+.start.start-white{
 	color: aliceblue;
 	font-size: 24px;
 }
 
-.start .start-blue{
+.start.start-blue{
 	color: aquamarine;
 	font-size: 36px;
 }
@@ -53,6 +56,7 @@
 	right: 0;
 	background-color: bisque;
 	opacity: .7;
+	display: none;
 }
 
 .end{
@@ -62,6 +66,7 @@
 	transform: translateX(-50%);
 	z-index: 2;
 	text-align: center;
+	display: none;
 }
 
 .end .over{
@@ -102,14 +107,14 @@
 	color: #F0F8FF;
 	background-color: #8eb9f5;
 }
-.end .rank-degree .first{
+.end .rank-degree.first{
 	background-color: #f54545;
 }
 
-.end .rank-degree .second{
+.end .rank-degree.second{
 	background-color: #ff8547;
 }
-.end .rank-degree .third{
+.end .rank-degree.third{
 	background-color: #ffac38;
 }
 
